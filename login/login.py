@@ -26,9 +26,9 @@ for i in xrange(6):
         L = file(L_file)
         for Line in L.readlines():
             Lines = Line.split()
-            print Lines
+            #print Lines
             if username == Lines[0] :
-                print "账号 已经被锁定，请联系管理员解锁账号" 
+                print "%s 账号 已经被锁定，请联系管理员解锁账号" % username
                 Lock = 1
                 L.close()
                 break
