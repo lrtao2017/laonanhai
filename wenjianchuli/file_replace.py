@@ -7,7 +7,7 @@ import sys,shutil,os
 
 if len(sys.argv) <4: #获取命令行参数
     print "请使用正确方法：./file_replace.py  old_text  new_text  filename (--nobak, 不保留备份文件)"
-    
+    sys.exit()
 else:
     old_text,new_text,file_name = sys.argv[1],sys.argv[2],sys.argv[3]
 #print old_text,new_text,file_name
