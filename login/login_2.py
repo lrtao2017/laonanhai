@@ -148,7 +148,7 @@ def Start():
     for i in enumerate(User):
         print i[0],i[1]
     start_status = raw_input('请选您要进行的操作：').strip()
-    if len(start_status) == 1  and start_status.isdigit():
+    if len(start_status) == 1  and start_status.isdigit() and int(start_status) <= 1:
         if int(start_status) == 0 :
             Sign_up()
         else:
