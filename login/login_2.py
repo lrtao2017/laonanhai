@@ -114,7 +114,9 @@ def Sign_in():
                 sys.exit()
             print '账号或密码错误，请重新登陆'
             Sign_in()
-            
+        if validation == None:
+            print '账号或密码错误，请重新登陆'
+            Sign_in() 
     else:
         print '验证码错误'
         Sign_in()
